@@ -1,0 +1,166 @@
+/* Type */
+body, input, select, textarea {
+    color: #333; /* 일반 텍스트 색상 */
+    font-family: 'Pretendard', sans-serif; /* Pretendard 폰트 사용 */
+    font-size: 16pt;
+    font-weight: 400; /* Regular 폰트 두께 */
+    line-height: 1.75;
+
+    /* 모바일 화면 크기에 맞춰 폰트 크기 조정 */
+    @media (max-width: 1200px) {
+        font-size: 14pt;
+    }
+
+    @media (max-width: 1024px) {
+        font-size: 12pt;
+    }
+}
+
+a {
+    transition: border-bottom-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    color: #333; /* 링크 색상 */
+    border-bottom: dotted 1px rgba(51, 51, 51, 0.5);
+
+    &:hover {
+        border-bottom-color: transparent;
+        color: #007BFF; /* 링크 hover 색상 */
+    }
+}
+
+strong, b {
+    color: #000; /* 굵은 텍스트 색상 */
+    font-weight: bold;
+}
+
+em, i {
+    font-style: italic;
+}
+
+p {
+    margin: 0 0 1em 0;
+}
+
+h1 {
+    font-size: 2.75em;
+    color: #333; /* 제목 색상 */
+    font-weight: bold;
+    line-height: 1.3;
+    margin: 0 0 1em 0;
+    letter-spacing: -0.5px;
+
+    a {
+        color: inherit;
+    }
+
+    /* 모바일 화면에서 제목 크기 줄이기 */
+    @media (max-width: 600px) {
+        font-size: 2em;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1.75em;
+    }
+}
+
+h2, h3, h4, h5, h6 {
+    color: #333;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 0 0 1em 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+    a {
+        color: inherit;
+    }
+}
+
+h2 {
+    font-size: 1.1em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+h4 {
+    font-size: 0.8em;
+}
+
+h5 {
+    font-size: 0.8em;
+}
+
+h6 {
+    font-size: 0.8em;
+}
+
+sub {
+    font-size: 0.8em;
+    position: relative;
+    top: 0.5em;
+}
+
+sup {
+    font-size: 0.8em;
+    position: relative;
+    top: -0.5em;
+}
+
+blockquote {
+    border-left: solid 4px #ccc;
+    font-style: italic;
+    margin: 0 0 1em 0;
+    padding: 1em 0;
+}
+
+code {
+    background: #f4f4f4;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    margin: 0 0.25em;
+    padding: 0.25em 0.65em;
+}
+
+pre {
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    margin: 0 0 1em 0;
+}
+
+hr {
+    border: 0;
+    border-bottom: solid 1px #ccc;
+    margin: 1em 0;
+
+    &.major {
+        margin: 1.5em 0;
+    }
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+body {
+    line-height: 1.8; /* 한국어에 맞는 적당한 줄 간격 */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 0.5px; /* 제목의 글자 간격 조정 */
+}
+
+p {
+    line-height: 1.85; /* 본문에서 한국어와 영어가 섞인 경우 여백을 더 넓게 설정 */
+}
